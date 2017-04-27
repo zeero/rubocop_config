@@ -5,7 +5,7 @@ require 'rubocop_config/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rubocop_config"
-  spec.version       = RubocopConf::VERSION
+  spec.version       = RubocopConfig::VERSION
   spec.authors       = ["siukaido"]
   spec.email         = ["siukaido@gmail.com"]
 
