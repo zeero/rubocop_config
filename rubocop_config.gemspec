@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rubocop_conf/version'
+require 'rubocop_config/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rubocop_conf"
+  spec.name          = "rubocop_config"
   spec.version       = RubocopConf::VERSION
   spec.authors       = ["siukaido"]
   spec.email         = ["siukaido@gmail.com"]
