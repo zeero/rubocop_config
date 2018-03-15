@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* Gemfile(.rb)
+
+```ruby
+group :test, :development do
+ gem 'rubocop_config', github: 'studyplus/rubocop_config'
+end
+```
+
+* rubocop.yml
+
+```yaml
+inherit_gem:
+  rubocop_config: config/rubocop.yml
+```
 
 ## Development
 
