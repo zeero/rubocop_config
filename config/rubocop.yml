@@ -1,146 +1,42 @@
-# 常にRailsモードを用いる
-Rails:
-  Enabled: true
-
-# メソッド名のprefixに「set_」「get_」を許可
-Style/AccessorMethodName:
-  Enabled: false
-
-# Ascii文字以外のコメントも許可
 Style/AsciiComments:
   Enabled: false
 
-# alias じゃなくてalias_method
-Style/Alias:
-  EnforcedStyle: prefer_alias_method
-  Enabled: true
-
-Style/BracesAroundHashParameters:
+Layout/TrailingBlankLines:
   Enabled: false
 
-# モジュール名::クラス名の定義を許可
-Style/ClassAndModuleChildren:
+Metrics/MethodLength:
   Enabled: false
 
-# トップレベルドキュメント
-Style/Documentation:
+Metrics/AbcSize:
   Enabled: false
 
-# 空メソッドも展開した形で書く
-Style/EmptyMethod:
-  EnforcedStyle: expanded
-  Enabled: true
-
-# 無駄な空白を認めない
-Style/ExtraSpacing:
-  AllowForAlignment: true
-  Enabled: true
-
-# メソッドコール時の引数インデント
-Style/FirstParameterIndentation:
-  EnforcedStyle: consistent
-  Enabled: true
-
-# フォーマット付き文字列の場合は sprintf を用いる
-Style/FormatString:
-  EnforcedStyle: sprintf
-  Enabled: true
-
-Style/GuardClause:
-  MinBodyLength: 4
-  Enabled: true
-
-# if, unless が1行80文字収まる場合に1行で記述しているかのチェックはしない
-Style/IfUnlessModifier:
+Style/SymbolArray:
   Enabled: false
 
-# 配列内のインデント
-Style/IndentArray:
-  EnforcedStyle: consistent
-  Enabled: true
-
-# ハッシュ内のインデント
-Style/IndentHash:
-  EnforcedStyle: consistent
-  Enabled: true
-
-# ラムダコールは -> も許可
-Style/Lambda:
+Metrics/LineLength:
   Enabled: false
 
-# 文字列連結時、改行直前でも + を用いてよい
-Style/LineEndConcatenation:
+Metrics/BlockLength:
   Enabled: false
 
-# メソッド定義で引数を持つ場合は()が必要
-Style/MethodDefParentheses:
-  EnforcedStyle: require_parentheses
-  Enabled: true
-
-# "extend self" ではなく "module_function"を用いる必要はない
-Style/ModuleFunction:
+Layout/EmptyLines:
   Enabled: false
 
-# reduce, inject など1行でブロック呼び出しした場合の変数名を固定しない
-Style/SingleLineBlockParams:
+Layout/EmptyLinesAroundClassBody:
   Enabled: false
 
-# 引数のスペースは可読性を優先
-Style/SpaceAroundOperators:
+Style/TrailingCommaInHashLiteral:
   Enabled: false
 
-# nextを使用する
-Style/Next:
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+Style/RescueStandardError:
   Enabled: false
 
-# 123456を123_456と記述する必要はない
-Style/NumericLiterals:
-  Enabled: false
-
-# returnあってもいい
-Style/RedundantReturn:
-  Enabled: false
-
-Style/SpecialGlobalVars:
-  EnforcedStyle: use_perl_names
-  Enabled: true
-
-# メソッドコールの末尾のカンマをつけない
-Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: no_comma
-  Enabled: true
-
-# 配列やハッシュの末尾にカンマが必要
-Style/TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: comma
-  Enabled: true
-
-# while, until が1行80文字収まる場合に1行で記述しているかのチェックはしない
-Style/WhileUntilModifier:
-  Enabled: false
-
-# 文字列の配列は %w, %W 記法を用いる。ただし、3つ以下の時は["a", "b", "c"]でもよい
 Style/WordArray:
-  EnforcedStyle: percent
-  MinSize: 3
-  Enabled: true
-
-Style/RaiseArgs:
-  EnforcedStyle: compact
-  Enabled: true
-
-Style/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
-
-# hoge == 0 -> hoge.zero? ってする必要はない
-Style/NumericPredicate:
   Enabled: false
 
-# if hoge.lenght > 0 -> unless hoge.empty? ってする必要はない
-Style/ZeroLengthPredicate:
-  Enabled: false
-
-AllCops:
-  Exclude:
-    - db/**/*
-    - vendor/**/*
