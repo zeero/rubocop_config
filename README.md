@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ```ruby
 group :test, :development do
- gem 'rubocop_config', github: 'studyplus/rubocop_config'
+  gem 'rubocop_config', github: 'zeero/rubocop_config'
 end
 ```
 
