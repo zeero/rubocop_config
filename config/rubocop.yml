@@ -40,3 +40,12 @@ Style/RescueStandardError:
 Style/WordArray:
   Enabled: false
 
+Metrics/ModuleLength:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
